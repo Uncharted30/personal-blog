@@ -1,0 +1,34 @@
+server:
+  port: 8082
+  use-forward-headers: true
+  tomcat:
+    remote-ip-header: X-Real-IP
+    protocol-header: X-Forwarded-Proto
+
+spring:
+  datasource:
+    username: root
+    password: Pan093232
+    url: jdbc:mysql://blog_db:3306/blog?useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 2MB
+      max-request-size: 1000MB
+web:
+  upload-path: /home/ec2-user/blog_static
+
+
+
+#showSql
+logging:
+  level:
+    com.pan: warn
+    mapper: debug
+  file:
+    path: /home/ec2-user/blog_log/blog-dev.log

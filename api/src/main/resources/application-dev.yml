@@ -1,0 +1,30 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    username: root
+    password: Pan093232
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 2MB
+      max-request-size: 1000MB
+web:
+  upload-path: /Users/pan/blog_static
+
+
+
+#showSql
+logging:
+  level:
+    com.pan: warn
+    mapper: debug
+  file:
+    path: log/blog-dev.log
