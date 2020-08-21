@@ -5,7 +5,10 @@
 ![](./demo/demo0.png)
 
 This is a demo project, which used some widely used frameworks, such as Spring Boot, Shiro and Vue.js.
+
 This project is a good practise for beginners.
+
+The theme of blog display pages is designed and implemented by chakhsu, [pinghsu by chakhsu](https://github.com/chakhsu/pinghsu). Credits to the author.
 
 ![License](https://img.shields.io/badge/SpringBoot-v2.2.4.RELEASE-green.svg)
 ![License](https://img.shields.io/badge/Vue.js-v2.6.10-blue.svg)
